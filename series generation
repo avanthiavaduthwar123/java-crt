@@ -24,3 +24,32 @@ Sample Input 1
 Sample Output 1
 
 7 5 8 6 9 7 10 8 11 9
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner s=new Scanner(System.in);
+        int n,r=7,i;
+        n=s.nextInt();
+        System.out.printf("%d ",r);
+        for(i=1;i<n;i++)
+        {
+            if(i%2!=0)
+            {
+                r=r-2;
+                System.out.printf("%d ",r);
+            }
+            else
+            {
+                r=r+3;
+                System.out.printf("%d ",r);
+                
+            }
+            }
+        }
+}
+
